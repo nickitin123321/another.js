@@ -5,6 +5,10 @@ export default class {
       throw new Error('No tree');
     }
 
+    if (!styler) {
+      throw new Error('No styler');
+    }
+
     this.tree = tree;
     this.styler = styler;
   }
