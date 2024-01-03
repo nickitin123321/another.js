@@ -1,0 +1,1 @@
+export const gen = (len = 7) => 'uuid-' + Math.random().toString(36).substring(2, len) + Math.random().toString(36).substring(2, len);

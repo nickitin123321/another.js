@@ -26,9 +26,7 @@ export default class {
     const { spawner, scheme, pool } = this;
     const stack = [scheme];
     while (stack.length) {
-      /** @type {TreeNode} */
-      const node = {}
-      Object.assign(node, stack.pop());
+      const node = /** @type {TreeNode} */ (stack.pop());
       const { chs, tag } = node;
       const domNode = spawner.createElement(tag);
       node.content = domNode, pool.push(node), delete node.chs;
@@ -41,6 +39,6 @@ export default class {
       }
     }
 
-    return Object.assign([], pool)
+    return  pool
   }
 }
