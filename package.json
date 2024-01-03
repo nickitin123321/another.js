@@ -1,0 +1,16 @@
+{
+  "name": "another",
+  "version": "0.0.1",
+  "description": "Another web framework",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --outfile=dist/index.js --loader:.html=text",
+    "run": "npm run build && node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.19.11",
+    "express": "^4.18.2"
+  }
+}
