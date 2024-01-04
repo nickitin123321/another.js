@@ -5,6 +5,6 @@ import render from './dom/render.js'
   try {
     await render(main);
   } catch (err) {
-    console.error(`On render error: ${err}`)
+    console.error(`On render error: ${err}`);
   }
 })()
