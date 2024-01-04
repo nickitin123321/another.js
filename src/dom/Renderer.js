@@ -35,6 +35,6 @@ export default class {
       parent.appendChild(content);
     }
 
-    return pool
+    return pool;
   }
 }

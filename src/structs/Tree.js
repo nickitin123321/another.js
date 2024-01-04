@@ -39,6 +39,6 @@ export default class {
       }
     }
 
-    return  pool
+    return pool
   }
 }
