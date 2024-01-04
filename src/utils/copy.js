@@ -1,0 +1,1 @@
+export const dirtyShallowCopy = (obj) => JSON.parse(JSON.stringify(obj))

@@ -1,5 +1,3 @@
-import { gen } from '../utils/uuid'
-
 export default class {
   //`.${uuid} ${JSON.stringify(item.style)}`.replaceAll(',', ';').replaceAll('"', '')
   parseParams(uuid, style){
@@ -14,10 +12,9 @@ export default class {
   async linkPool(pool) {
     let cssString = ''
     for (const item of pool) {
-      if (!item.style) continue;
-      const uuid = gen();
-      item.content.className = uuid;
-      cssString += this.parseParams(uuid, item.style);
+      if (!item.style && !item.class && !item.isCopied) continue;
+      item.content.className = item.class || item.uuid
+      item.style && (cssString += this.parseParams(item.uuid, item.style));
     }
 
     return cssString;
