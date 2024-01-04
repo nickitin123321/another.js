@@ -40,12 +40,12 @@ export default class {
       const node = /** @type {TreeNode} */ (stack.pop());
       const { chs, x, tag, parent, class: cls, content, uuid: copiedUuid } = node;
       const domNode = content || spawner.createElement(tag);
-      const uuid = gen()
+      const uuid = gen();
       if (x) {
         for (let i = 1; i < x; i++) {
           const copiedChs = chs ? dirtyShallowCopy(chs): [];
-          const copiedNode = { parent, tag, chs: copiedChs, isCopied: true, uuid }
-          cls && (copiedNode.class = cls)
+          const copiedNode = { parent, tag, chs: copiedChs, isCopied: true, uuid };
+          cls && (copiedNode.class = cls);
           stack.push(copiedNode);
         }
         node.isOrigin = true;
