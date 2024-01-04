@@ -1,4 +1,4 @@
-import scheme from './schemas/manyDivs.js'
+import scheme from './schemas/main.js'
 import render from './dom/render.js'
 
 (async () => {

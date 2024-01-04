@@ -43,7 +43,7 @@ export default class {
       const uuid = gen();
       if (x) {
         for (let i = 1; i < x; i++) {
-          const copiedChs = chs ? dirtyShallowCopy(chs): [];
+          const copiedChs = chs ? dirtyShallowCopy(chs) : [];
           const copiedNode = { parent, tag, chs: copiedChs, isCopied: true, uuid };
           cls && (copiedNode.class = cls);
           stack.push(copiedNode);

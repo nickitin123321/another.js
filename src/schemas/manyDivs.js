@@ -20,7 +20,7 @@ export default {
         'align-items': 'center'
       },
       tag: 'div',
-      x: 4000,
+      x: 80000,
       chs: [
         {
           tag: 'div',
