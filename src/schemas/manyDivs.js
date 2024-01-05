@@ -13,7 +13,8 @@ export default {
     {
       style: {
         width: `${DIV_SIZE}px`,
-        height: `${DIV_SIZE}px`, 'background-color': 'navy',
+        height: `${DIV_SIZE}px`,
+        'background-color': 'navy',
         border: '1px solid white',
         display: 'flex',
         'justify-content': 'center',

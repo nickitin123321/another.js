@@ -5,7 +5,7 @@ import render from './dom/render.js'
   try {
     console.time('rendered');
     const pool = await render(scheme);
-    console.log({ pool })
+    console.log({ pool });
     console.timeEnd('rendered');
   } catch (err) {
     console.error(`Error on render ${err}`)
