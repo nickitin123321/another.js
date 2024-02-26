@@ -22,6 +22,9 @@ export default {
       },
       tag: 'div',
       x: 80000,
+      onclick: (el) => {
+        console.log(el)
+      },
       chs: [
         {
           tag: 'div',
