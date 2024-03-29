@@ -1,7 +1,9 @@
 export default class {
   pool = [];
+  eventTypes = [];
   constructor(pool) {
-    this.pool;
+    this.pool = pool;
+    this.eventTypes = this.getAllEventsTypes();
   }
 
   getAllEventsTypes() {
@@ -11,9 +13,16 @@ export default class {
       if (/^on/.test(event)) types[types.length] = event;
     }
 
-    return types
+    return types;
   }
 
+  initHandlers(){
+    for (const { content } of this.pool) {
+      for (const key in content) {
+        if event
+      } 
+    }
+  }
 
   //   globalListen(){
   //     Object.keys(window).forEach(key => {
