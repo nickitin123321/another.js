@@ -4,7 +4,7 @@
   "description": "Another web framework",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild src/index.js --bundle --outfile=dist/index.js --loader:.html=text",
+    "build": "esbuild src/index.js --bundle --outfile=dist/index.js --loader:.html=text --minify",
     "run": "npm run build && node server.js"
   },
   "author": "",
